@@ -1,6 +1,7 @@
 import React,{useState, useEffect} from 'react'
 import {Link} from 'react-router-dom'
 import './App.css';
+require('dotenv').config()
 
 
 function App() {
@@ -31,7 +32,6 @@ function App() {
     }
 else
     if(e.key === 'Enter'){
-      console.log('aaaaaaa');
       api.searchBy(search)
       setCache(search)
       setSearch('')
