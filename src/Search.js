@@ -10,7 +10,7 @@ const Search = (props) => {
     const api = {
         KEY: process.env.REACT_APP_API_KEY,
         searchBy(find){
-          fetch(`http://omdbapi.com/?i=${find}&apikey=${this.KEY}`)
+          fetch(`https://omdbapi.com/?i=${find}&apikey=${this.KEY}`)
           .then(res => res.json())
           .then(result =>{ setFilm(result)})
         }
