@@ -16,7 +16,7 @@ function App() {
       this.searchBy(this.DEFAULT_SEARCH)
     },
     searchBy(find){
-      fetch(`http://omdbapi.com/?s=${find}&apikey=${this.KEY}`)
+      fetch(`https://omdbapi.com/?s=${find}&apikey=${this.KEY}`)
       .then(res => res.json())
       .then(result =>{ setFilms(result.Search)})
     }
